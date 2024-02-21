@@ -68,7 +68,9 @@
   display: flex;
   margin-top: 0px;
   align-items: flex-start;
+  background-size: cover;
   justify-content: center;
+  background-image: url("public/layered-peaks-haikei%20(3).svg");
 }
 .home-hero1 {
   gap: var(--dl-space-space-halfunit);
@@ -81,6 +83,7 @@
   padding-right: 0px;
   flex-direction: row;
   justify-content: center;
+  background-color: transparent;
 }
 .home-hero-text {
   gap: var(--dl-space-space-unit);
@@ -112,6 +115,7 @@
 .home-container02 {
   width: 100%;
   max-width: 600px;
+  background: #fff;
   box-shadow:  0 4px 8px rgba(0,0,0,0.2);
 }
 .home-container03 {
