@@ -89,7 +89,7 @@
   gap: var(--dl-space-space-halfunit);
   width: 50%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -339,6 +339,10 @@
   }
   .home-hero-heading {
     font-size: 36px;
+    text-align: center;
+  }
+  .home-text {
+    text-align: center;
   }
   .home-hero-sub-heading {
     padding-left: var(--dl-space-space-unit);
