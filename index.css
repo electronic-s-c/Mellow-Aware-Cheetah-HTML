@@ -303,7 +303,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.home-container14 {
+.home-container13 {
+  display: hidden;
+}
+.home-container15 {
   display: contents;
 }
 @media(max-width: 991px) {
