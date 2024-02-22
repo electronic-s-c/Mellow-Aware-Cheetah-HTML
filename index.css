@@ -97,14 +97,9 @@
 .home-hero-heading {
   color: #1c1c1c;
   max-width: 800px;
-  text-align: left;
 }
 .home-text {
   color: rgb(0, 36, 91);
-}
-.home-hero-sub-heading {
-  font-size: 18px;
-  text-align: center;
 }
 .home-container01 {
   flex: 0 0 auto;
@@ -205,10 +200,10 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.home-text32 {
+.home-text18 {
   margin-bottom: var(--dl-space-space-oneandhalfunits);
 }
-.home-text33 {
+.home-text19 {
   text-align: left;
 }
 .home-container08 {
@@ -319,11 +314,6 @@
     font-size: 40px;
     text-align: center;
   }
-  .home-hero-sub-heading {
-    text-align: center;
-    padding-left: var(--dl-space-space-threeunits);
-    padding-right: var(--dl-space-space-threeunits);
-  }
   .home-container01 {
     justify-content: center;
   }
@@ -342,7 +332,7 @@
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
   }
-  .home-text33 {
+  .home-text19 {
     text-align: center;
     padding-left: var(--dl-space-space-threeunits);
     padding-right: var(--dl-space-space-threeunits);
@@ -366,10 +356,6 @@
     font-size: 30px;
     text-align: center;
   }
-  .home-hero-sub-heading {
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-  }
   .home-features1 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
@@ -390,7 +376,7 @@
     align-items: center;
     justify-content: center;
   }
-  .home-text33 {
+  .home-text19 {
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
@@ -419,7 +405,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .home-text37 {
+  .home-text23 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -457,7 +443,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  .home-text37 {
+  .home-text23 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
