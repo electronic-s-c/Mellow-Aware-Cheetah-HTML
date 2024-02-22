@@ -151,31 +151,6 @@
               class="policy-image"
             />
           </a>
-          <div class="policy-separator"></div>
-          <div data-role="AccordionHeader" class="policy-accordion-header">
-            <svg viewBox="0 0 1024 1024" class="policy-icon">
-              <path
-                d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-              ></path>
-            </svg>
-          </div>
-          <div data-role="AccordionContent" class="policy-accordion-content">
-            <div class="policy-nav">
-              <nav
-                class="navigation-links6-nav navigation-links6-root-class-name20"
-              >
-                <span class="navigation-links6-text"><span>About</span></span>
-                <span class="navigation-links6-text1">
-                  <span>Features</span>
-                </span>
-                <span class="navigation-links6-text2">
-                  <span>Pricing</span>
-                </span>
-                <span class="navigation-links6-text3"><span>Team</span></span>
-                <span class="navigation-links6-text4"><span>Blog</span></span>
-              </nav>
-            </div>
-          </div>
         </header>
         <span>
           <span>Cookie Policy for Electronic Security Contractors</span>
@@ -334,6 +309,80 @@
           <br />
           <br />
         </span>
+        <a
+          href="https://www.electronicsecuritycontractors.co.uk"
+          class="policy-link button"
+        >
+          Home
+        </a>
+        <div class="footer-footer">
+          <footer class="footerContainer footer-footer1">
+            <div class="footer-container">
+              <img
+                alt="image"
+                src="public/external/logoframe-200h.png"
+                class="footer-image"
+              />
+              <div class="footer-container1">
+                <nav class="footer-nav"></nav>
+              </div>
+              <div class="footer-container2">
+                <span><span>Built and powered by</span></span>
+                <a href="https://eruptible.co" class="footer-link">
+                  <img
+                    src="public/logo1-200h.png"
+                    alt="image"
+                    class="footer-image1"
+                  />
+                </a>
+              </div>
+            </div>
+            <div class="footer-separator"></div>
+            <div class="footer-container3">
+              <span class="bodySmall footer-text1">
+                <span>
+                  © 2024 Electronic Security Contractors, All Rights Reserved.
+                </span>
+              </span>
+              <div class="footer-icon-group"></div>
+            </div>
+          </footer>
+          <div>
+            <div>
+              <div class="footer-container6">
+                <div
+                  id="cookieConsentBanner"
+                  style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: #00245B; color: #fff; text-align: center; padding: 10px; z-index: 1000;"
+                >
+                  This website uses cookies.
+                  <a href="/policy" style="color: #8ac0ff;">Learn more</a>
+                  .
+                  <button
+                    onclick="acceptCookies()"
+                    style="border-radius:20px; margin-left: 15px; background-color: #ffffff; color: #000; border: none; padding: 5px 10px; cursor: pointer;"
+                  >
+                    Accept
+                  </button>
+                </div>
+
+                <script>
+                  function checkCookieConsent() {
+                    if (!document.cookie.split('; ').find(row => row.startsWith('userConsent='))) {
+                      document.getElementById('cookieConsentBanner').style.display = 'block';
+                    }
+                  }
+
+                  function acceptCookies() {
+                    document.getElementById('cookieConsentBanner').style.display = 'none';
+                    document.cookie = 'userConsent=accepted; path=/; max-age=' + 60*60*24*30; // Expires in 30 days
+                  }
+
+                  document.addEventListener('DOMContentLoaded', checkCookieConsent);
+                </script>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script
