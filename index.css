@@ -304,7 +304,7 @@
   justify-content: space-between;
 }
 .home-container13 {
-  display: hidden;
+  display: none;
 }
 .home-container15 {
   display: contents;
