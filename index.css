@@ -97,12 +97,10 @@
 .home-hero-heading {
   color: #1c1c1c;
   max-width: 800px;
-  align-self: flex-start;
   text-align: left;
 }
 .home-text {
   color: rgb(0, 36, 91);
-  align-self: flex-start;
 }
 .home-hero-sub-heading {
   font-size: 18px;
