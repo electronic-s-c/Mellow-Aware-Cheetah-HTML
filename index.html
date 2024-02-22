@@ -489,7 +489,7 @@
               <div class="home-container15">
                 <div
                   id="cookieConsentBanner"
-                  style="position: fixed; bottom: 0; left: 0; width: 100%; background: #000; color: #fff; text-align: center; padding: 10px; z-index: 1000;"
+                  style="display: none; position: fixed; bottom: 0; left: 0; width: 100%; background: #000080; color: #fff; text-align: center; padding: 10px; z-index: 1000;"
                 >
                   This website uses cookies to ensure you get the best
                   experience on our website.
@@ -497,25 +497,25 @@
                   .
                   <button
                     onclick="acceptCookies()"
-                    style="margin-left: 15px; background-color: #FFCC00; color: #000; border: none; padding: 5px 10px; cursor: pointer;"
+                    style="margin-left: 15px; background-color: #ADD8E6; color: #000; border: none; padding: 5px 10px; cursor: pointer;"
                   >
                     Accept
                   </button>
                 </div>
 
                 <script>
-                  function acceptCookies() {
-                    document.getElementById('cookieConsentBanner').style.display = 'none';
-                    // Set the cookie to record user's consent. Adjust expiry as needed.
-                    document.cookie = 'userConsent=accepted; path=/; max-age=' + 60*60*24*30; // Expires in 30 days
-                    // Add further actions here if needed, such as logging consent.
-                  }
-                  // Optional: Check if the userConsent cookie is already set, and hide the banner if so.
-                  window.onload = function() {
-                    if (document.cookie.split(';').some((item) => item.trim().startsWith('userConsent='))) {
-                      document.getElementById('cookieConsentBanner').style.display = 'none';
+                  function checkCookieConsent() {
+                    if (!document.cookie.split('; ').find(row => row.startsWith('userConsent='))) {
+                      document.getElementById('cookieConsentBanner').style.display = 'block';
                     }
                   }
+
+                  function acceptCookies() {
+                    document.getElementById('cookieConsentBanner').style.display = 'none';
+                    document.cookie = 'userConsent=accepted; path=/; max-age=' + 60*60*24*30; // Expires in 30 days
+                  }
+
+                  document.addEventListener('DOMContentLoaded', checkCookieConsent);
                 </script>
               </div>
             </div>
