@@ -180,9 +180,6 @@
   grid-gap: var(--dl-space-space-oneandhalfunits);
   grid-template-columns: 1fr 1fr;
 }
-.home-container08 {
-  display: contents;
-}
 .home-faq {
   flex: 0 0 auto;
   width: 100%;
@@ -203,7 +200,7 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-fourunits);
 }
-.home-container09 {
+.home-container07 {
   display: flex;
   max-width: 35%;
   align-items: flex-start;
@@ -216,7 +213,7 @@
 .home-text33 {
   text-align: left;
 }
-.home-container10 {
+.home-container08 {
   gap: var(--dl-space-space-oneandhalfunits);
   display: flex;
   align-items: flex-start;
@@ -230,7 +227,7 @@
   align-items: center;
   justify-content: center;
 }
-.home-container11 {
+.home-container09 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -243,7 +240,7 @@
   width: 200px;
   object-fit: cover;
 }
-.home-container12 {
+.home-container10 {
   gap: var(--dl-space-space-unit);
   display: flex;
   max-width: var(--dl-size-size-maxwidth);
@@ -259,7 +256,7 @@
   align-items: center;
   flex-direction: row;
 }
-.home-container13 {
+.home-container11 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: center;
@@ -291,7 +288,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.home-container14 {
+.home-container12 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -305,6 +302,9 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
+}
+.home-container14 {
+  display: contents;
 }
 @media(max-width: 991px) {
   .home-hero1 {
@@ -386,7 +386,7 @@
   .home-faq1 {
     flex-direction: column;
   }
-  .home-container09 {
+  .home-container07 {
     max-width: 100%;
     align-self: center;
     align-items: center;
@@ -400,10 +400,10 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .home-container11 {
+  .home-container09 {
     flex-direction: column;
   }
-  .home-container13 {
+  .home-container11 {
     gap: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
     align-items: center;
@@ -416,7 +416,7 @@
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .home-container14 {
+  .home-container12 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
@@ -454,7 +454,7 @@
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .home-container14 {
+  .home-container12 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
