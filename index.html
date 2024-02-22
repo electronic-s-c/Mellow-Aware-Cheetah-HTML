@@ -484,17 +484,39 @@
               <div class="home-icon-group"></div>
             </div>
           </footer>
-          <div class="home-container13">
+          <div>
             <div>
               <div class="home-container15">
-                <script
-                  src="https://cdn.commoninja.com/sdk/latest/commonninja.js"
-                  defer=""
-                ></script>
                 <div
-                  style="display:none;"
-                  class="commonninja_component pid-d52f67ab-1367-4903-832a-bb8120a7c81a"
-                ></div>
+                  id="cookieConsentBanner"
+                  style="position: fixed; bottom: 0; left: 0; width: 100%; background: #000; color: #fff; text-align: center; padding: 10px; z-index: 1000;"
+                >
+                  This website uses cookies to ensure you get the best
+                  experience on our website.
+                  <a href="/policy" style="color: #FFCC00;">Learn more</a>
+                  .
+                  <button
+                    onclick="acceptCookies()"
+                    style="margin-left: 15px; background-color: #FFCC00; color: #000; border: none; padding: 5px 10px; cursor: pointer;"
+                  >
+                    Accept
+                  </button>
+                </div>
+
+                <script>
+                  function acceptCookies() {
+                    document.getElementById('cookieConsentBanner').style.display = 'none';
+                    // Set the cookie to record user's consent. Adjust expiry as needed.
+                    document.cookie = 'userConsent=accepted; path=/; max-age=' + 60*60*24*30; // Expires in 30 days
+                    // Add further actions here if needed, such as logging consent.
+                  }
+                  // Optional: Check if the userConsent cookie is already set, and hide the banner if so.
+                  window.onload = function() {
+                    if (document.cookie.split(';').some((item) => item.trim().startsWith('userConsent='))) {
+                      document.getElementById('cookieConsentBanner').style.display = 'none';
+                    }
+                  }
+                </script>
               </div>
             </div>
           </div>
