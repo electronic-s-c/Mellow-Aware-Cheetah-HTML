@@ -54,8 +54,9 @@
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-threeunits);
   padding-right: var(--dl-space-space-threeunits);
-  flex-direction: column;
+  flex-direction: row;
   padding-bottom: var(--dl-space-space-twounits);
+  justify-content: center;
 }
 .home-image {
   width: 200px;
@@ -227,7 +228,7 @@
 }
 .home-container09 {
   flex: 0 0 auto;
-  width: 1099px;
+  width: 100%;
   height: auto;
   display: flex;
   align-self: center;
@@ -254,6 +255,20 @@
   align-items: center;
   flex-direction: row;
 }
+.home-container11 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-link {
+  display: contents;
+}
+.home-image3 {
+  width: 200px;
+  object-fit: cover;
+  text-decoration: none;
+}
 .home-separator {
   flex: 0 0 auto;
   width: 100%;
@@ -272,7 +287,7 @@
   border-left-width: 0px;
   border-right-width: 0px;
 }
-.home-container11 {
+.home-container12 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -376,18 +391,28 @@
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
+  .home-container09 {
+    flex-direction: column;
+  }
+  .home-container11 {
+    gap: var(--dl-space-space-halfunit);
+    margin-top: var(--dl-space-space-unit);
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
   .home-separator {
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-left: 0px;
     margin-right: 0px;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .home-container11 {
+  .home-container12 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .home-text36 {
+  .home-text37 {
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
 }
@@ -420,12 +445,12 @@
     margin-top: var(--dl-space-space-oneandhalfunits);
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
-  .home-container11 {
+  .home-container12 {
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
   }
-  .home-text36 {
+  .home-text37 {
     text-align: center;
     margin-bottom: var(--dl-space-space-oneandhalfunits);
   }
